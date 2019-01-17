@@ -17,108 +17,16 @@
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
-	<link rel="stylesheet" href="https://cdn.webrtc-experiment.com/style.css">
+  
     <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    
-    <style>
-        blockquote {
-            padding: 0;
-        }
-        pre {
-            font-size: 15px;
-            padding: 0;
-        }
-        header {
-            border-bottom: 1px solid #ddd;
-            margin: -39px;
-            margin-bottom: auto;
-        }
-
-        h1 {
-            font-size: 25px!important;
-        }
-
-        h1, h2, h3, h4 {
-            color: #EC008C;
-            font-weight: normal;
-        }
-
-        nav h2 {
-            font-size: 25px!important;
-            padding: 5px 10px!important;
-            text-align: center!important;
-            display: block!important;
-        }
-
-        nav {
-            padding: 0;
-        }
-
-        nav ul li {
-            border-left: 0;
-        }
-
-        a {
-            margin-right: 10px;
-            color: #38a8e0!important;
-        }
-
-        a:hover {
-            color: #EC008C!important;
-        }
-
-        /* table */
-        table {
-          border-collapse: collapse;
-          text-align: left;
-          width: 100%;
-        }
-
-        table td, table th {
-          padding: 3px 10px;
-        }
-
-        table thead th {
-          background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
-          background: -moz-linear-gradient( center top, #006699 5%, #00557F 100% );
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
-          background-color: #006699;
-          color: #FFFFFF;
-          font-weight: bold;
-          border-left: 1px solid #0070A8;
-        }
-
-        table thead th:first-child {
-          border: none;
-        }
-
-        table tbody td {
-          color: #00496B;
-          border-left: 1px solid #E1EEF4;
-          font-weight: normal;
-        }
-
-        table tbody .alt td {
-          background: #E1EEF4;
-          color: #00496B;
-        }
-
-        table tbody td:first-child {
-          border-left: none;
-        }
-
-        table tbody tr:last-child td {
-          border-bottom: none;
-        }
-
-    </style>
-    
-    <link rel="alternate" type="application/rss+xml" title="Muaz Khan Feed" href="http://feeds.feedburner.com/muazkh">
 </head>
 
 <body>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="CanvasRecorder.html">CanvasRecorder</a></li><li><a href="GetRecorderType.html">GetRecorderType</a></li><li><a href="GifRecorder.html">GifRecorder</a></li><li><a href="MediaStreamRecorder.html">MediaStreamRecorder</a></li><li><a href="MRecordRTC.html">MRecordRTC</a></li><li><a href="MultiStreamRecorder.html">MultiStreamRecorder</a></li><li><a href="RecordRTC.html">RecordRTC</a></li><li><a href="RecordRTCConfiguration.html">RecordRTCConfiguration</a></li><li><a href="RecordRTCPromisesHandler.html">RecordRTCPromisesHandler</a></li><li><a href="StereoAudioRecorder.html">StereoAudioRecorder</a></li><li><a href="WebAssemblyRecorder.html">WebAssemblyRecorder</a></li><li><a href="Whammy.html">Whammy</a></li><li><a href="WhammyRecorder.html">WhammyRecorder</a></li></ul><h3>Global</h3><ul><li><a href="global.html#bytesToSize">bytesToSize</a></li><li><a href="global.html#DiskStorage">DiskStorage</a></li><li><a href="global.html#getSeekableBlob">getSeekableBlob</a></li><li><a href="global.html#invokeSaveAsDialog">invokeSaveAsDialog</a></li><li><a href="global.html#isElectron">isElectron</a></li><li><a href="global.html#Storage">Storage</a></li></ul>
+</nav>
 
 <div id="main">
     
@@ -127,50 +35,45 @@
 
 
 <section>
-<article>
-    <header style="text-align: center;">
-        <h1>Class: RecordRTCConfiguration</h1>            
-        <p>
-            <span> &copy; </span>
-            <a href="http://www.MuazKhan.com/">Muaz Khan</a>
-            . <a href="http://twitter.com/WebRTCWeb" title="Twitter profile for WebRTC Experiments">@WebRTCWeb</a>
-            . <a href="https://github.com/muaz-khan?tab=repositories"title="Github Profile">Github</a>
-            . <a href="https://github.com/muaz-khan/RecordRTC/issues?state=open">Latest issues</a>
-            . <a href="https://github.com/muaz-khan/RecordRTC/commits/master">What's New?</a>
-        </p>
-    </header>
+
+<header>
     
-    <div class="github-stargazers"></div>
+        <h2><span class="attribs"><span class="type-signature"></span></span>RecordRTCConfiguration<span class="signature">(mediaStream, config)</span><span class="type-signature"></span></h2>
         
+    
+</header>
+
+<article>
     <div class="container-overview">
     
         
-<dt>
-    
-        <h4 class="name" id="RecordRTCConfiguration"><a href="#RecordRTCConfiguration"><span class="type-signature"></span>new RecordRTCConfiguration<span class="signature">(mediaStream, config)</span><span class="type-signature"></span></a></h4>
-
-        
-        <p class="summary">It configures the 2nd parameter passed over <a href="RecordRTC.html">RecordRTC</a> and returns a valid "config" object.</p>
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <a href="RecordRTCConfiguration.html">RecordRTCConfiguration</a> is an inner/private helper for <a href="RecordRTC.html">RecordRTC</a>.
-    </div>
-    
 
     
 
     
-
+    <h4 class="name" id="RecordRTCConfiguration"><span class="type-signature"></span>new RecordRTCConfiguration<span class="signature">(mediaStream, config)</span><span class="type-signature"></span></h4>
     
 
     
-        <h5>Parameters:</h5>
-        
+    <p class="summary"><p>It configures the 2nd parameter passed over <a href="RecordRTC.html">RecordRTC</a> and returns a valid &quot;config&quot; object.</p></p>
+    
+
+
+
+<div class="description">
+    <p><a href="RecordRTCConfiguration.html">RecordRTCConfiguration</a> is an inner/private helper for <a href="RecordRTC.html">RecordRTC</a>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
 
 <table class="params">
     <thead>
@@ -210,7 +113,7 @@
 
             
 
-            <td class="description last">MediaStream object fetched using getUserMedia API or generated using captureStreamUntilEnded or WebAudio API.</td>
+            <td class="description last"><p>MediaStream object fetched using getUserMedia API or generated using captureStreamUntilEnded or WebAudio API.</p></td>
         </tr>
 
     
@@ -233,18 +136,21 @@
 
             
 
-            <td class="description last">{type:"video", disableLogs: true, numberOfAudioChannels: 1, bufferSize: 0, sampleRate: 0, video: HTMLVideoElement, getNativeBlob:true, etc.}</td>
+            <td class="description last"><p>{type:&quot;video&quot;, disableLogs: true, numberOfAudioChannels: 1, bufferSize: 0, sampleRate: 0, video: HTMLVideoElement, getNativeBlob:true, etc.}</p></td>
         </tr>
 
     
     </tbody>
 </table>
-    
 
-    
+
+
+
 
 
 <dl class="details">
+
+    
 
     
 
@@ -281,7 +187,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line832">line 832</a>
+        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line901">line 901</a>
     </li></ul></dd>
     
 
@@ -300,25 +206,26 @@
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
     
-        <h5>Example</h5>
-        
     <pre class="prettyprint"><code>var options = RecordRTCConfiguration(mediaStream, options);</code></pre>
 
-    
-</dd>
+
 
     
     </div>
@@ -329,7 +236,9 @@
 
     
 
-     
+    
+
+    
 
     
 
@@ -341,6 +250,7 @@
 
     
 </article>
+
 </section>
 
 
@@ -348,31 +258,15 @@
 
 </div>
 
-<nav>
-    <h2><a href="/">Homepage</a></h2><h3>Classes</h3><ul><li><a href="CanvasRecorder.html">CanvasRecorder</a></li><li><a href="GetRecorderType.html">GetRecorderType</a></li><li><a href="GifRecorder.html">GifRecorder</a></li><li><a href="MediaStreamRecorder.html">MediaStreamRecorder</a></li><li><a href="MRecordRTC.html">MRecordRTC</a></li><li><a href="MultiStreamRecorder.html">MultiStreamRecorder</a></li><li><a href="RecordRTC.html">RecordRTC</a></li><li><a href="RecordRTCConfiguration.html">RecordRTCConfiguration</a></li><li><a href="RecordRTCPromisesHandler.html">RecordRTCPromisesHandler</a></li><li><a href="StereoAudioRecorder.html">StereoAudioRecorder</a></li><li><a href="Whammy.html">Whammy</a></li><li><a href="WhammyRecorder.html">WhammyRecorder</a></li></ul><h3>Global</h3><ul><li><a href="global.html#bytesToSize">bytesToSize</a></li><li><a href="global.html#DiskStorage">DiskStorage</a></li><li><a href="global.html#invokeSaveAsDialog">invokeSaveAsDialog</a></li><li><a href="global.html#Storage">Storage</a></li></ul>
-</nav>
-
 <br clear="both">
-
-<div>
-	<article style="padding: 0!important;margin: 1em auto 0 auto!important;max-width: 100%!important;">
-		<small id="send-message"></small>
-	</article>
-</div>
-
-<footer>
-    <a href="https://www.webrtc-experiment.com/">WebRTC Experiments</a>
-    &copy; <a href="https://plus.google.com/+MuazKhan" rel="author" >Muaz Khan</a>
-    <a href="mailto:muazkh@gmail.com">muazkh@gmail.com</a>
-    <a href="https://github.com/muaz-khan">Github</a>
-    <a href="https://twitter.com/WebRTCWeb">@WebRTCWeb</a>
-</footer>
 
 <script> prettyPrint(); </script>
 <script src="scripts/linenumber.js"> </script>
 
-<!-- commits.js is useless for you! -->
-<script src="https://cdn.webrtc-experiment.com/common.js" async> </script>
-<a href="https://plus.google.com/+WebRTC-Experiment" rel="publisher"></a>
+<footer style="margin-top: 20px; text-align: left;">
+    <p style="padding: 5px 10px; text-align: center;"><a href="https://github.com/muaz-khan/RecordRTC">https://github.com/muaz-khan/RecordRTC</a></p>
+    <div><small id="send-message"></small></div>
+</footer>
+<script src="https://cdn.webrtc-experiment.com/common.js"></script>
 </body>
 </html>

@@ -17,108 +17,16 @@
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
-	<link rel="stylesheet" href="https://cdn.webrtc-experiment.com/style.css">
+  
     <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    
-    <style>
-        blockquote {
-            padding: 0;
-        }
-        pre {
-            font-size: 15px;
-            padding: 0;
-        }
-        header {
-            border-bottom: 1px solid #ddd;
-            margin: -39px;
-            margin-bottom: auto;
-        }
-
-        h1 {
-            font-size: 25px!important;
-        }
-
-        h1, h2, h3, h4 {
-            color: #EC008C;
-            font-weight: normal;
-        }
-
-        nav h2 {
-            font-size: 25px!important;
-            padding: 5px 10px!important;
-            text-align: center!important;
-            display: block!important;
-        }
-
-        nav {
-            padding: 0;
-        }
-
-        nav ul li {
-            border-left: 0;
-        }
-
-        a {
-            margin-right: 10px;
-            color: #38a8e0!important;
-        }
-
-        a:hover {
-            color: #EC008C!important;
-        }
-
-        /* table */
-        table {
-          border-collapse: collapse;
-          text-align: left;
-          width: 100%;
-        }
-
-        table td, table th {
-          padding: 3px 10px;
-        }
-
-        table thead th {
-          background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
-          background: -moz-linear-gradient( center top, #006699 5%, #00557F 100% );
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
-          background-color: #006699;
-          color: #FFFFFF;
-          font-weight: bold;
-          border-left: 1px solid #0070A8;
-        }
-
-        table thead th:first-child {
-          border: none;
-        }
-
-        table tbody td {
-          color: #00496B;
-          border-left: 1px solid #E1EEF4;
-          font-weight: normal;
-        }
-
-        table tbody .alt td {
-          background: #E1EEF4;
-          color: #00496B;
-        }
-
-        table tbody td:first-child {
-          border-left: none;
-        }
-
-        table tbody tr:last-child td {
-          border-bottom: none;
-        }
-
-    </style>
-    
-    <link rel="alternate" type="application/rss+xml" title="Muaz Khan Feed" href="http://feeds.feedburner.com/muazkh">
 </head>
 
 <body>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="CanvasRecorder.html">CanvasRecorder</a></li><li><a href="GetRecorderType.html">GetRecorderType</a></li><li><a href="GifRecorder.html">GifRecorder</a></li><li><a href="MediaStreamRecorder.html">MediaStreamRecorder</a></li><li><a href="MRecordRTC.html">MRecordRTC</a></li><li><a href="MultiStreamRecorder.html">MultiStreamRecorder</a></li><li><a href="RecordRTC.html">RecordRTC</a></li><li><a href="RecordRTCConfiguration.html">RecordRTCConfiguration</a></li><li><a href="RecordRTCPromisesHandler.html">RecordRTCPromisesHandler</a></li><li><a href="StereoAudioRecorder.html">StereoAudioRecorder</a></li><li><a href="WebAssemblyRecorder.html">WebAssemblyRecorder</a></li><li><a href="Whammy.html">Whammy</a></li><li><a href="WhammyRecorder.html">WhammyRecorder</a></li></ul><h3>Global</h3><ul><li><a href="global.html#bytesToSize">bytesToSize</a></li><li><a href="global.html#DiskStorage">DiskStorage</a></li><li><a href="global.html#getSeekableBlob">getSeekableBlob</a></li><li><a href="global.html#invokeSaveAsDialog">invokeSaveAsDialog</a></li><li><a href="global.html#isElectron">isElectron</a></li><li><a href="global.html#Storage">Storage</a></li></ul>
+</nav>
 
 <div id="main">
     
@@ -127,50 +35,45 @@
 
 
 <section>
-<article>
-    <header style="text-align: center;">
-        <h1>Class: MediaStreamRecorder</h1>            
-        <p>
-            <span> &copy; </span>
-            <a href="http://www.MuazKhan.com/">Muaz Khan</a>
-            . <a href="http://twitter.com/WebRTCWeb" title="Twitter profile for WebRTC Experiments">@WebRTCWeb</a>
-            . <a href="https://github.com/muaz-khan?tab=repositories"title="Github Profile">Github</a>
-            . <a href="https://github.com/muaz-khan/RecordRTC/issues?state=open">Latest issues</a>
-            . <a href="https://github.com/muaz-khan/RecordRTC/commits/master">What's New?</a>
-        </p>
-    </header>
+
+<header>
     
-    <div class="github-stargazers"></div>
+        <h2><span class="attribs"><span class="type-signature"></span></span>MediaStreamRecorder<span class="signature">(mediaStream, config)</span><span class="type-signature"></span></h2>
         
+    
+</header>
+
+<article>
     <div class="container-overview">
     
         
-<dt>
-    
-        <h4 class="name" id="MediaStreamRecorder"><a href="#MediaStreamRecorder"><span class="type-signature"></span>new MediaStreamRecorder<span class="signature">(mediaStream, config)</span><span class="type-signature"></span></a></h4>
-
-        
-        <p class="summary">Runs top over <a href="https://w3c.github.io/mediacapture-record/MediaRecorder.html">MediaRecorder API</a>.</p>
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        MediaStreamRecorder is an abstraction layer for <a href="https://w3c.github.io/mediacapture-record/MediaRecorder.html">MediaRecorder API</a>. It is used by <a href="RecordRTC.html">RecordRTC</a> to record MediaStream(s) in both Chrome and Firefox.
-    </div>
-    
 
     
 
     
-
+    <h4 class="name" id="MediaStreamRecorder"><span class="type-signature"></span>new MediaStreamRecorder<span class="signature">(mediaStream, config)</span><span class="type-signature"></span></h4>
     
 
     
-        <h5>Parameters:</h5>
-        
+    <p class="summary"><p>Runs top over <a href="https://w3c.github.io/mediacapture-record/MediaRecorder.html">MediaRecorder API</a>.</p></p>
+    
+
+
+
+<div class="description">
+    <p>MediaStreamRecorder is an abstraction layer for <a href="https://w3c.github.io/mediacapture-record/MediaRecorder.html">MediaRecorder API</a>. It is used by <a href="RecordRTC.html">RecordRTC</a> to record MediaStream(s) in both Chrome and Firefox.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
 
 <table class="params">
     <thead>
@@ -210,7 +113,7 @@
 
             
 
-            <td class="description last">MediaStream object fetched using getUserMedia API or generated using captureStreamUntilEnded or WebAudio API.</td>
+            <td class="description last"><p>MediaStream object fetched using getUserMedia API or generated using captureStreamUntilEnded or WebAudio API.</p></td>
         </tr>
 
     
@@ -233,18 +136,21 @@
 
             
 
-            <td class="description last">{disableLogs:true, initCallback: function, mimeType: "video/webm", timeSlice: 1000}</td>
+            <td class="description last"><p>{disableLogs:true, initCallback: function, mimeType: &quot;video/webm&quot;, timeSlice: 1000}</p></td>
         </tr>
 
     
     </tbody>
 </table>
-    
 
-    
+
+
+
 
 
 <dl class="details">
+
+    
 
     
 
@@ -281,7 +187,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line1816">line 1816</a>
+        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line1969">line 1969</a>
     </li></ul></dd>
     
 
@@ -300,37 +206,54 @@
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Throws:</h5>
-    
-            
+
+
+
+
+
+<h5>Throws:</h5>
+
+        
 
     <div class="param-desc">
     
-        Will throw an error if first argument "MediaStream" is missing. Also throws error if "MediaRecorder API" are not supported by the browser.
+        <p>Will throw an error if first argument &quot;MediaStream&quot; is missing. Also throws error if &quot;MediaRecorder API&quot; are not supported by the browser.</p>
     
     </div>
 
 
-        
-
     
 
-    
-        <h5>Example</h5>
-        
-    <pre class="prettyprint"><code>var config = {    mimeType: 'video/webm', // vp8, vp9, h264, mkv, opus/vorbis    audioBitsPerSecond : 256 * 8 * 1024,    videoBitsPerSecond : 256 * 8 * 1024,    bitsPerSecond: 256 * 8 * 1024,  // if this is provided, skip above two    checkForInactiveTracks: true,    timeSlice: 1000, // concatenate intervals based blobs    ignoreMutedMedia: true}var recorder = new MediaStreamRecorder(mediaStream, config);recorder.record();recorder.stop(function(blob) {    video.src = URL.createObjectURL(blob);    // or    var blob = recorder.blob;});</code></pre>
 
+
+
+
+
+    <h5>Example</h5>
     
-</dd>
+    <pre class="prettyprint"><code>var config = {
+    mimeType: 'video/webm', // vp8, vp9, h264, mkv, opus/vorbis
+    audioBitsPerSecond : 256 * 8 * 1024,
+    videoBitsPerSecond : 256 * 8 * 1024,
+    bitsPerSecond: 256 * 8 * 1024,  // if this is provided, skip above two
+    checkForInactiveTracks: true,
+    timeSlice: 1000, // concatenate intervals based blobs
+    ondataavailable: function() {} // get intervals based blobs
+}
+var recorder = new MediaStreamRecorder(mediaStream, config);
+recorder.record();
+recorder.stop(function(blob) {
+    video.src = URL.createObjectURL(blob);
+
+    // or
+    var blob = recorder.blob;
+});</code></pre>
+
+
 
     
     </div>
@@ -341,31 +264,31 @@
 
     
 
-     
+    
+
+    
 
     
 
     
         <h3 class="subsection-title">Members</h3>
 
-        <dl>
+        
             
-<dt>
-    <h4 class="name" id=".this.blob"><a href="#.this.blob"><span class="type-signature">(static) </span>this.blob<span class="type-signature"></span></a></h4>
+<h4 class="name" id=".this.blob"><span class="type-signature">(static) </span>this.blob<span class="type-signature"></span></h4>
 
-    
-</dt>
-<dd>
-    
 
-    
 
-    
+
+
+
+
+
 
 
     <h5 class="subsection-title">Properties:</h5>
 
-    <dl>
+    
 
 <table class="props">
     <thead>
@@ -405,13 +328,13 @@
 
             
 
-            <td class="description last">Recorded data as "Blob" object.</td>
+            <td class="description last"><p>Recorded data as &quot;Blob&quot; object.</p></td>
         </tr>
 
     
     </tbody>
 </table>
-</dl>
+
 
 
 
@@ -440,9 +363,11 @@
     
 
     
+
+    
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2171">line 2171</a>
+        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2393">line 2393</a>
     </li></ul></dd>
     
 
@@ -454,34 +379,33 @@
 </dl>
 
 
-    
 
-    
-        <h5>Example</h5>
-        
-    <pre class="prettyprint"><code>recorder.stop(function() {    var blob = recorder.blob;});</code></pre>
 
+
+    <h5>Example</h5>
     
-</dd>
+    <pre class="prettyprint"><code>recorder.stop(function() {
+    var blob = recorder.blob;
+});</code></pre>
+
+
 
         
             
-<dt>
-    <h4 class="name" id=".this.timestamps"><a href="#.this.timestamps"><span class="type-signature">(static) </span>this.timestamps<span class="type-signature"></span></a></h4>
+<h4 class="name" id=".this.timestamps"><span class="type-signature">(static) </span>this.timestamps<span class="type-signature"></span></h4>
 
-    
-</dt>
-<dd>
-    
 
-    
 
-    
+
+
+
+
+
 
 
     <h5 class="subsection-title">Properties:</h5>
 
-    <dl>
+    
 
 <table class="props">
     <thead>
@@ -521,13 +445,13 @@
 
             
 
-            <td class="description last">Array of time stamps</td>
+            <td class="description last"><p>Array of time stamps</p></td>
         </tr>
 
     
     </tbody>
 </table>
-</dl>
+
 
 
 
@@ -556,9 +480,11 @@
     
 
     
+
+    
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2050">line 2050</a>
+        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2245">line 2245</a>
     </li></ul></dd>
     
 
@@ -570,48 +496,50 @@
 </dl>
 
 
-    
 
+
+
+    <h5>Example</h5>
     
-        <h5>Example</h5>
-        
     <pre class="prettyprint"><code>console.log(recorder.timestamps);</code></pre>
 
-    
-</dd>
 
-        </dl>
+
+        
     
 
     
         <h3 class="subsection-title">Methods</h3>
 
-        <dl>
-            
-<dt>
-    
-        <h4 class="name" id=".this.clearRecordedData"><a href="#.this.clearRecordedData"><span class="type-signature">(static) </span>this.clearRecordedData<span class="signature">()</span><span class="type-signature"></span></a></h4>
-
         
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        This method resets currently recorded data.
-    </div>
-    
+            
 
     
 
     
-
+    <h4 class="name" id=".this.clearRecordedData"><span class="type-signature">(static) </span>this.clearRecordedData<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
-
+    <p class="summary">This method resets currently recorded data.</p>
     
+
+
+
+<div class="description">
+    <p>This method resets currently recorded data.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <dl class="details">
@@ -639,9 +567,11 @@
     
 
     
+
+    
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2141">line 2141</a>
+        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2340">line 2340</a>
     </li></ul></dd>
     
 
@@ -653,52 +583,56 @@
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
     
-        <h5>Example</h5>
-        
     <pre class="prettyprint"><code>recorder.clearRecordedData();</code></pre>
 
-    
-</dd>
+
 
         
             
-<dt>
-    
-        <h4 class="name" id=".this.getArrayOfBlobs"><a href="#.this.getArrayOfBlobs"><span class="type-signature">(static) </span>this.getArrayOfBlobs<span class="signature">()</span><span class="type-signature"> &rarr; {Array}</span></a></h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        This method returns array of blobs. Use only with "timeSlice". Its useful to preview recording anytime, without using the "stop" method.
-    </div>
-    
 
     
 
     
-
+    <h4 class="name" id=".this.getAllStates"><span class="type-signature">(static) </span>this.getAllStates<span class="signature">()</span><span class="type-signature"> &rarr; {Array}</span></h4>
     
 
     
-
+    <p class="summary">Get MediaRecorder all recording states.</p>
     
+
+
+
+<div class="description">
+    <p>Get MediaRecorder all recording states.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <dl class="details">
@@ -726,9 +660,11 @@
     
 
     
+
+    
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line1896">line 1896</a>
+        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2423">line 2423</a>
     </li></ul></dd>
     
 
@@ -740,22 +676,22 @@
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    Returns array of recorded blobs.
+    <p>Returns all recording states</p>
 </div>
 
 
@@ -772,42 +708,46 @@
     </dd>
 </dl>
 
-        
-
     
-        <h5>Example</h5>
-        
-    <pre class="prettyprint"><code>var arrayOfBlobs = recorder.getArrayOfBlobs();</code></pre>
 
+
+
+
+    <h5>Example</h5>
     
-</dd>
+    <pre class="prettyprint"><code>var state = recorder.getAllStates();</code></pre>
+
+
 
         
             
-<dt>
-    
-        <h4 class="name" id=".this.getState"><a href="#.this.getState"><span class="type-signature">(static) </span>this.getState<span class="signature">()</span><span class="type-signature"> &rarr; {String}</span></a></h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        Get MediaRecorder readonly state.
-    </div>
-    
 
     
 
     
-
+    <h4 class="name" id=".this.getArrayOfBlobs"><span class="type-signature">(static) </span>this.getArrayOfBlobs<span class="signature">()</span><span class="type-signature"> &rarr; {Array}</span></h4>
     
 
     
-
+    <p class="summary">This method returns array of blobs.</p>
     
+
+
+
+<div class="description">
+    <p>This method returns array of blobs. Use only with &quot;timeSlice&quot;. Its useful to preview recording anytime, without using the &quot;stop&quot; method.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <dl class="details">
@@ -835,9 +775,11 @@
     
 
     
+
+    
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2181">line 2181</a>
+        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2049">line 2049</a>
     </li></ul></dd>
     
 
@@ -849,22 +791,137 @@
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    Returns recording state.
+    <p>Returns array of recorded blobs.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>var arrayOfBlobs = recorder.getArrayOfBlobs();</code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".this.getState"><span class="type-signature">(static) </span>this.getState<span class="signature">()</span><span class="type-signature"> &rarr; {String}</span></h4>
+    
+
+    
+    <p class="summary">Get MediaRecorder readonly state.</p>
+    
+
+
+
+<div class="description">
+    <p>Get MediaRecorder readonly state.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2404">line 2404</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Returns recording state.</p>
 </div>
 
 
@@ -881,42 +938,46 @@
     </dd>
 </dl>
 
-        
-
     
-        <h5>Example</h5>
-        
+
+
+
+
+    <h5>Example</h5>
+    
     <pre class="prettyprint"><code>var state = recorder.getState();</code></pre>
 
-    
-</dd>
+
 
         
             
-<dt>
-    
-        <h4 class="name" id=".this.pause"><a href="#.this.pause"><span class="type-signature">(static) </span>this.pause<span class="signature">()</span><span class="type-signature"></span></a></h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        This method pauses the recording process.
-    </div>
-    
 
     
 
     
-
+    <h4 class="name" id=".this.pause"><span class="type-signature">(static) </span>this.pause<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
-
+    <p class="summary">This method pauses the recording process.</p>
     
+
+
+
+<div class="description">
+    <p>This method pauses the recording process.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <dl class="details">
@@ -944,9 +1005,11 @@
     
 
     
+
+    
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2107">line 2107</a>
+        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2306">line 2306</a>
     </li></ul></dd>
     
 
@@ -958,52 +1021,56 @@
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
     
-        <h5>Example</h5>
-        
     <pre class="prettyprint"><code>recorder.pause();</code></pre>
 
-    
-</dd>
+
 
         
             
-<dt>
-    
-        <h4 class="name" id=".this.record"><a href="#.this.record"><span class="type-signature">(static) </span>this.record<span class="signature">()</span><span class="type-signature"></span></a></h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        This method records MediaStream.
-    </div>
-    
 
     
 
     
-
+    <h4 class="name" id=".this.record"><span class="type-signature">(static) </span>this.record<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
-
+    <p class="summary">This method records MediaStream.</p>
     
+
+
+
+<div class="description">
+    <p>This method records MediaStream.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <dl class="details">
@@ -1031,9 +1098,11 @@
     
 
     
+
+    
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line1907">line 1907</a>
+        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2060">line 2060</a>
     </li></ul></dd>
     
 
@@ -1045,52 +1114,56 @@
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
     
-        <h5>Example</h5>
-        
     <pre class="prettyprint"><code>recorder.record();</code></pre>
 
-    
-</dd>
+
 
         
             
-<dt>
-    
-        <h4 class="name" id=".this.resume"><a href="#.this.resume"><span class="type-signature">(static) </span>this.resume<span class="signature">()</span><span class="type-signature"></span></a></h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        This method resumes the recording process.
-    </div>
-    
 
     
 
     
-
+    <h4 class="name" id=".this.resume"><span class="type-signature">(static) </span>this.resume<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
-
+    <p class="summary">This method resumes the recording process.</p>
     
+
+
+
+<div class="description">
+    <p>This method resumes the recording process.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <dl class="details">
@@ -1118,9 +1191,11 @@
     
 
     
+
+    
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2124">line 2124</a>
+        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2323">line 2323</a>
     </li></ul></dd>
     
 
@@ -1132,52 +1207,56 @@
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
     
-        <h5>Example</h5>
-        
     <pre class="prettyprint"><code>recorder.resume();</code></pre>
 
-    
-</dd>
+
 
         
             
-<dt>
-    
-        <h4 class="name" id=".this.stop"><a href="#.this.stop"><span class="type-signature">(static) </span>this.stop<span class="signature">(callback)</span><span class="type-signature"></span></a></h4>
-
-        
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        This method stops recording MediaStream.
-    </div>
-    
 
     
 
     
-
+    <h4 class="name" id=".this.stop"><span class="type-signature">(static) </span>this.stop<span class="signature">(callback)</span><span class="type-signature"></span></h4>
     
 
     
-        <h5>Parameters:</h5>
-        
+    <p class="summary">This method stops recording MediaStream.</p>
+    
+
+
+
+<div class="description">
+    <p>This method stops recording MediaStream.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
 
 <table class="params">
     <thead>
@@ -1217,15 +1296,16 @@
 
             
 
-            <td class="description last">Callback function, that is used to pass recorded blob back to the callee.</td>
+            <td class="description last"><p>Callback function, that is used to pass recorded blob back to the callee.</p></td>
         </tr>
 
     
     </tbody>
 </table>
-    
 
-    
+
+
+
 
 
 <dl class="details">
@@ -1253,9 +1333,11 @@
     
 
     
+
+    
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2070">line 2070</a>
+        <a href="RecordRTC.js.html">RecordRTC.js</a>, <a href="RecordRTC.js.html#line2273">line 2273</a>
     </li></ul></dd>
     
 
@@ -1267,33 +1349,37 @@
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
     
-        <h5>Example</h5>
+    <pre class="prettyprint"><code>recorder.stop(function(blob) {
+    video.src = URL.createObjectURL(blob);
+});</code></pre>
+
+
+
         
-    <pre class="prettyprint"><code>recorder.stop(function(blob) {    video.src = URL.createObjectURL(blob);});</code></pre>
-
-    
-</dd>
-
-        </dl>
     
 
     
 
     
 </article>
+
 </section>
 
 
@@ -1301,31 +1387,15 @@
 
 </div>
 
-<nav>
-    <h2><a href="/">Homepage</a></h2><h3>Classes</h3><ul><li><a href="CanvasRecorder.html">CanvasRecorder</a></li><li><a href="GetRecorderType.html">GetRecorderType</a></li><li><a href="GifRecorder.html">GifRecorder</a></li><li><a href="MediaStreamRecorder.html">MediaStreamRecorder</a></li><li><a href="MRecordRTC.html">MRecordRTC</a></li><li><a href="MultiStreamRecorder.html">MultiStreamRecorder</a></li><li><a href="RecordRTC.html">RecordRTC</a></li><li><a href="RecordRTCConfiguration.html">RecordRTCConfiguration</a></li><li><a href="RecordRTCPromisesHandler.html">RecordRTCPromisesHandler</a></li><li><a href="StereoAudioRecorder.html">StereoAudioRecorder</a></li><li><a href="Whammy.html">Whammy</a></li><li><a href="WhammyRecorder.html">WhammyRecorder</a></li></ul><h3>Global</h3><ul><li><a href="global.html#bytesToSize">bytesToSize</a></li><li><a href="global.html#DiskStorage">DiskStorage</a></li><li><a href="global.html#invokeSaveAsDialog">invokeSaveAsDialog</a></li><li><a href="global.html#Storage">Storage</a></li></ul>
-</nav>
-
 <br clear="both">
-
-<div>
-	<article style="padding: 0!important;margin: 1em auto 0 auto!important;max-width: 100%!important;">
-		<small id="send-message"></small>
-	</article>
-</div>
-
-<footer>
-    <a href="https://www.webrtc-experiment.com/">WebRTC Experiments</a>
-    &copy; <a href="https://plus.google.com/+MuazKhan" rel="author" >Muaz Khan</a>
-    <a href="mailto:muazkh@gmail.com">muazkh@gmail.com</a>
-    <a href="https://github.com/muaz-khan">Github</a>
-    <a href="https://twitter.com/WebRTCWeb">@WebRTCWeb</a>
-</footer>
 
 <script> prettyPrint(); </script>
 <script src="scripts/linenumber.js"> </script>
 
-<!-- commits.js is useless for you! -->
-<script src="https://cdn.webrtc-experiment.com/common.js" async> </script>
-<a href="https://plus.google.com/+WebRTC-Experiment" rel="publisher"></a>
+<footer style="margin-top: 20px; text-align: left;">
+    <p style="padding: 5px 10px; text-align: center;"><a href="https://github.com/muaz-khan/RecordRTC">https://github.com/muaz-khan/RecordRTC</a></p>
+    <div><small id="send-message"></small></div>
+</footer>
+<script src="https://cdn.webrtc-experiment.com/common.js"></script>
 </body>
 </html>
