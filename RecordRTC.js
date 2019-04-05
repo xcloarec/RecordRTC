@@ -1,6 +1,6 @@
 'use strict';
 
-// Last time updated: 2019-02-06 11:32:40 AM UTC
+// Last time updated: 2019-04-05 3:08:16 PM UTC
 
 // ________________
 // RecordRTC v5.5.4
@@ -2015,7 +2015,7 @@ function MediaStreamRecorder(mediaStream, config) {
     }
 
     if (typeof MediaRecorder === 'undefined') {
-        throw 'Your browser does not supports Media Recorder API. Please try other modules e.g. WhammyRecorder or StereoAudioRecorder.';
+        throw 'Your browser does not support the Media Recorder API. Please try other modules e.g. WhammyRecorder or StereoAudioRecorder.';
     }
 
     config = config || {
@@ -2876,18 +2876,18 @@ function StereoAudioRecorder(mediaStream, config) {
         });
     };
 
-    if (typeof Storage === 'undefined') {
-        var Storage = {
+    if (typeof RecordRTC.Storage === 'undefined') {
+        RecordRTC.Storage = {
             AudioContextConstructor: null,
             AudioContext: window.AudioContext || window.webkitAudioContext
         };
     }
 
-    if (!Storage.AudioContextConstructor) {
-        Storage.AudioContextConstructor = new Storage.AudioContext();
+    if (!RecordRTC.Storage.AudioContextConstructor || RecordRTC.Storage.AudioContextConstructor.state === 'closed') {
+        RecordRTC.Storage.AudioContextConstructor = new RecordRTC.Storage.AudioContext();
     }
 
-    var context = Storage.AudioContextConstructor;
+    var context = RecordRTC.Storage.AudioContextConstructor;
 
     // creates an audio node from the microphone incoming stream
     var audioInput = context.createMediaStreamSource(mediaStream);
